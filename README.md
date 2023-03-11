@@ -1,23 +1,3 @@
-<div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/nftc)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/nftc?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/nftc?style=social)
-  [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/xwXGdpRuSiQ?style=social)](https://youtu.be/xwXGdpRuSiQ)
-
-  <br />
-  <br />
-
-  <h2 align="center">NFTC - NFT website</h2>
-
-  NFTC is fully responsive nft website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
-
-  <a href="https://codewithsadee.github.io/nftc/"><strong>➥ Live Demo</strong></a>
-
-</div>
-
-<br />
 
 ### Demo Screeshots
 
@@ -36,18 +16,18 @@ To run **NFTC** locally, run this command on your git bash:
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/nftc.git
+sudo git clone https://github.com/RizanKhan837/NFT-Marketplace.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/nftc.git
+git clone https://github.com/RizanKhan837/NFT-Marketplace.git
 ```
 
 ### Contact
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+If you want to contact with me you can reach me at [LinkedIn](https://www.linkedin.com/in/rizwanakram837/).
 
 ### License
 
