@@ -1,8 +1,8 @@
-'use strict';
-import { uploadFileToIPFS, uploadJSONToIPFS } from '../../pinata.js';
+
+import { uploadFileToIPFS, uploadJSONToIPFS } from './pinata.js';
 
 let Marketplace;
-fetch('../../nftMarket.json')
+fetch('../../Marketplace.json')
   .then(response => response.json())
   .then(data => {
     Marketplace = data;

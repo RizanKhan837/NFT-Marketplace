@@ -25,12 +25,12 @@ async function main() {
 	await nftMarket.deployed();
 	console.log(`NFT Marketplace deployed to: ${nftMarket.address}`);
 
-	const data = JSON.stringify({
-		contractAddress: nftMarket.address,
-		abi: JSON.parse(marketplace.interface.format('json'))
-	});
+	const data = {
+		address: nftMarket.address,
+		abi: JSON.parse(nftMarket.interface.format('json'))
+	  }
 
-	fs.writeFileSync('nftMarket', JSON.stringify(data));
+	fs.writeFileSync('Marketplace.json', JSON.stringify(data));
 
   if (network.config.chainId == 5 && process.env.ETHERSCAN_API_KEY != undefined) {
     await nftMarket.deployTransaction.wait(4);

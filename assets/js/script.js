@@ -1,7 +1,6 @@
-'use strict';
 
-import { uploadFileToIPFS, uploadJSONToIPFS } from "../../pinata.js";
-import Marketplace from '../../nftMarket.json';
+
+import { uploadFileToIPFS, uploadJSONToIPFS } from "./pinata.js";
 
 /**
  * navbar toggle
