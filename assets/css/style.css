@@ -293,7 +293,7 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--xiketic);
-  padding-block: 20px;
+  padding-block: 16px;
   transition: var(--transition-1);
   z-index: 4;
 }
@@ -385,7 +385,7 @@ body {
 .hero {
   position: relative;
   background-color: var(--xiketic);
-  padding-block-start: 120px;
+  padding-block-start: 25px;
   padding-block-end: var(--section-padding);
   z-index: 1;
 }
@@ -395,9 +395,9 @@ body {
 .hero-title {
   font-size: var(--fs-1);
   font-weight: var(--fw-900);
-  line-height: 1.2;
+  line-height: 1.1;
   word-wrap: break-word;
-  margin-block-end: 25px;
+  margin-block-end: 20px;
 }
 
 .hero-text {
@@ -876,6 +876,7 @@ body {
 
 
 label{
+  color: #ffffff;
   display: block;
   margin: 10px 0;
 }
@@ -889,6 +890,8 @@ input{
 textarea{
   width: 100%;
   padding: 5px;
+  font-family: inherit;
+  font-size: medium;
   /* border: 1px solid #000000; */
   border-radius: 5px;
 }
@@ -956,10 +959,10 @@ input[type="submit"]:hover{
 .container-input{
   width: 100%;
   max-width: 480px;
-  padding: 0 20px;
+  padding: 0 10px;
   border-radius: 20px;
   border: 2px solid #ffffff;
-  margin: 130px auto 30px auto;
+  margin: 110px auto 30px auto;
 }
 
 .input-cnt{

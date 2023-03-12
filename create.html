@@ -91,24 +91,20 @@
     </div>
   </header>
 
-
-
-
-
         <div class="container-input">
             <div class="input-cnt">
               <label for="name">NFT Name</label>
-              <input type="text" id="to" placeholder="Enter Address e.g. 0x..."/> 
+              <input type="text" id="nftName" placeholder="My NFT"/> 
               <label for="description">NFT Description</label>
-              <textarea cols="40" rows="5" id="description" type="text" placeholder="Axie Infinity Collection"></textarea>
+              <textarea cols="40" rows="3" id="nftDescription" type="text" placeholder="Axie Infinity Collection ..."></textarea>
               <label for="price">Price</label>
-              <input type="number" id="chainId" placeholder="Min 0.1 ETH"/>
+              <input type="number" id="nftPrice" placeholder="Min 0.1 ETH"/>
               <label for="file">Upload File</label>
-              <input type="file" onChange={OnChangeFile}></input>
-            </div>
+              <input id="file" type="file"></input>
+          </div>
 
             <div class="button-cnt">
-                <button class="button-form" id="listnft"> <img src="./logo.png" width="30px" alt=""> Create NFT</button>
+                <button class="button-form" id="listNFT"> <img src="./logo.png" width="30px" alt="">List NFT</button>
             </div>
     </div>
 
@@ -265,7 +261,9 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="./assets/js/script.js"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.4.umd.min.js"></script>
 
   <!-- 
     - ionicon link

@@ -6,6 +6,7 @@
 // global scope, and execute the script.
 const { ethers, upgrades, run , network} = require("hardhat");
 require("@openzeppelin/hardhat-upgrades");
+const fs = require("fs");
 
 async function main() {
 	/* const currentTimestampInSeconds = Math.round(Date.now() / 1000);
@@ -14,12 +15,22 @@ async function main() {
 
   const lockedAmount = hre.ethers.utils.parseEther("1"); */
 
+  const [deployer] = await ethers.getSigners(); // signers is an array of accounts to sign transactions
+  const balance = await deployer.getBalance();
+
 	const NFTMarketplace = await ethers.getContractFactory("NFTMarketplace");
 	const nftMarket = await upgrades.deployProxy(NFTMarketplace, []);
 	//const upg = await hre.upgrades.upgradeProxy("0x5FbDB2315678afecb367f032d93F642f64180aa3", RizanUG);
 	//const rizanug = await RizanUG.deploy();
 	await nftMarket.deployed();
 	console.log(`NFT Marketplace deployed to: ${nftMarket.address}`);
+
+	const data = JSON.stringify({
+		contractAddress: nftMarket.address,
+		abi: JSON.parse(marketplace.interface.format('json'))
+	});
+
+	fs.writeFileSync('nftMarket', JSON.stringify(data));
 
   if (network.config.chainId == 5 && process.env.ETHERSCAN_API_KEY != undefined) {
     await nftMarket.deployTransaction.wait(4);
