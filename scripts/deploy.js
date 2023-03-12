@@ -14,8 +14,8 @@ async function main() {
 
   const lockedAmount = hre.ethers.utils.parseEther("1"); */
 
-	const NFTMarketplace2 = await ethers.getContractFactory("NFTMarketplace");
-	const nftMarket = await upgrades.deployProxy(NFTMarketplace2, []);
+	const NFTMarketplace = await ethers.getContractFactory("NFTMarketplace");
+	const nftMarket = await upgrades.deployProxy(NFTMarketplace, []);
 	//const upg = await hre.upgrades.upgradeProxy("0x5FbDB2315678afecb367f032d93F642f64180aa3", RizanUG);
 	//const rizanug = await RizanUG.deploy();
 	await nftMarket.deployed();
